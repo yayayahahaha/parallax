@@ -23,16 +23,86 @@
 body {
     overflow: hidden;
 }
-.perspectiveView {
+img{
+    width: 10%;
+}
+
+.btns{
+    position: fixed;
+    top: 30vh;
+    width: 5vh;
+    height: 30vh;
     text-align: center;
-    perspective:1000px;
+    z-index: 10;
+    .btn{
+        border: 0px solid red;
+        &:focus{
+            background-color: #444;
+        }
+    }
+    .btn1{
+        display: inline-block;
+        margin: 2.25vh 0;
+        width: 3vh;
+        height: 3vh;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        @include transition(background-color 0.3s);
+        &:hover{
+            background-color: #444;
+        }
+    }
+    .btn2{
+        display: inline-block;
+        margin: 2.25vh 0;
+        width: 3vh;
+        height: 3vh;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        @include transition(background-color 0.3s);
+        &:hover{
+            background-color: #444;
+        }
+    }
+    .btn3{
+        display: inline-block;
+        margin: 2.25vh 0;
+        width: 3vh;
+        height: 3vh;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        @include transition(background-color 0.3s);
+        &:hover{
+            background-color: #444;
+        }
+    }
+    .btn4{
+        display: inline-block;
+        margin: 2.25vh 0;
+        width: 3vh;
+        height: 3vh;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        @include transition(background-color 0.3s);
+        &:hover{
+            background-color: #444;
+        }
+    }
+}
+
+.perspectiveView {
+    perspective: 1000px;
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
 
-    .layer{
+    .layer {
         position: relative;
         width: 100vw;
         height: 400vh;
@@ -40,105 +110,93 @@ body {
         top: 0px;
         left: 0px;
         @include transform-origin(50%, 50vh);
-        .view{
+
+        .view {
             position: absolute;
-            .content{
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+
+            .content {
+                pointer-events:none;
+                text-align: center;
                 display: inline-block;
                 width: 80vw;
-                height: 200px;
-                // outline: 1px solid red;
+                line-height: 3rem;
+                font-size: 1.5rem;
+                color: transparent;
+                // color: rgba(0,0,0,0.25);
                 vertical-align: middle;
             }
-            &:after{
+            &:after {
                 content: "";
                 display: inline-block;
-                // outline: 1px solid blue;
                 vertical-align: middle;
                 height: 100%;
             }
         }
-        .view1{
-            // outline: 1px solid blue;
-            width: 100vw;
-            height: 100vh;
-        }
-        .view2{
-            // outline: 1px solid black;
-            width: 100vw;
-            height: 100vh;
-        }
-        .view3{
-            // outline: 1px solid blue;
-            width: 100vw;
-            height: 100vh;
-        }
-        .view4{
-            // outline: 1px solid black;
-            width: 100vw;
-            height: 100vh;
-        }
     }
-    
     .layer1 {
         @include transform(translateZ(875px) scale(0.125));
-        .view{
-            left: 0px;
+
+        .view1 {
+            top: 0 * 800vh;
         }
-        .view2{
-            top: 800vh;
+        .view2 {
+            top: 1 * 800vh;
         }
-        .view3{
+        .view3 {
             top: 2 * 800vh;
         }
-        .view4{
+        .view4 {
             top: 3 * 800vh;
         }
     }
-
     .layer2 {
         @include transform(translateZ(750px) scale(0.25));
-        .view{
-            left: 0px;
+
+        .view1 {
+            top: 0 * 400vh;
         }
-        .view2{
-            top: 400vh;
+        .view2 {
+            top: 1 * 400vh;
         }
-        .view3{
+        .view3 {
             top: 2 * 400vh;
         }
-        .view4{
+        .view4 {
             top: 3 * 400vh;
         }
     }
-
     .layer3 {
         @include transform(translateZ(500px) scale(0.5));
-        .view{
-            left: 0px;
+
+        .view1 {
+            top: 0 * 200vh;
         }
-        .view2{
-            top: 200vh;
+        .view2 {
+            top: 1 * 200vh;
         }
-        .view3{
+        .view3 {
             top: 2 * 200vh;
         }
-        .view4{
+        .view4 {
             top: 3 * 200vh;
         }
     }
-
     .layer4 {
         @include transform(translateZ(0px) scale(1));
-        .view{
-            left: 0px;
+
+        .view1 {
+            top: 0 * 100vh;
         }
-        .view2{
-            top: 100vh;
+        .view2 {
+            top: 1 * 100vh;
         }
-        .view3{
+        .view3 {
             top: 2 * 100vh;
         }
-        .view4{
+        .view4 {
             top: 3 * 100vh;
         }
     }

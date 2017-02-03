@@ -29,8 +29,102 @@ body {
 }
 
 /* line 26, ../sass/all.scss */
-.perspectiveView {
+img {
+  width: 10%;
+}
+
+/* line 30, ../sass/all.scss */
+.btns {
+  position: fixed;
+  top: 30vh;
+  width: 5vh;
+  height: 30vh;
   text-align: center;
+  z-index: 10;
+}
+/* line 37, ../sass/all.scss */
+.btns .btn {
+  border: 0px solid red;
+}
+/* line 39, ../sass/all.scss */
+.btns .btn:focus {
+  background-color: #444;
+}
+/* line 43, ../sass/all.scss */
+.btns .btn1 {
+  display: inline-block;
+  margin: 2.25vh 0;
+  width: 3vh;
+  height: 3vh;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+/* line 52, ../sass/all.scss */
+.btns .btn1:hover {
+  background-color: #444;
+}
+/* line 56, ../sass/all.scss */
+.btns .btn2 {
+  display: inline-block;
+  margin: 2.25vh 0;
+  width: 3vh;
+  height: 3vh;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+/* line 65, ../sass/all.scss */
+.btns .btn2:hover {
+  background-color: #444;
+}
+/* line 69, ../sass/all.scss */
+.btns .btn3 {
+  display: inline-block;
+  margin: 2.25vh 0;
+  width: 3vh;
+  height: 3vh;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+/* line 78, ../sass/all.scss */
+.btns .btn3:hover {
+  background-color: #444;
+}
+/* line 82, ../sass/all.scss */
+.btns .btn4 {
+  display: inline-block;
+  margin: 2.25vh 0;
+  width: 3vh;
+  height: 3vh;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+/* line 91, ../sass/all.scss */
+.btns .btn4:hover {
+  background-color: #444;
+}
+
+/* line 97, ../sass/all.scss */
+.perspectiveView {
   perspective: 1000px;
   position: relative;
   width: 100vw;
@@ -38,7 +132,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
 }
-/* line 35, ../sass/all.scss */
+/* line 105, ../sass/all.scss */
 .perspectiveView .layer {
   position: relative;
   width: 100vw;
@@ -51,133 +145,120 @@ body {
   -webkit-transform-origin: 50% 50vh;
   transform-origin: 50% 50vh;
 }
-/* line 43, ../sass/all.scss */
+/* line 114, ../sass/all.scss */
 .perspectiveView .layer .view {
   position: absolute;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
-/* line 45, ../sass/all.scss */
+/* line 120, ../sass/all.scss */
 .perspectiveView .layer .view .content {
+  pointer-events: none;
+  text-align: center;
   display: inline-block;
   width: 80vw;
-  height: 200px;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  color: transparent;
   vertical-align: middle;
 }
-/* line 52, ../sass/all.scss */
+/* line 131, ../sass/all.scss */
 .perspectiveView .layer .view:after {
   content: "";
   display: inline-block;
   vertical-align: middle;
   height: 100%;
 }
-/* line 60, ../sass/all.scss */
-.perspectiveView .layer .view1 {
-  width: 100vw;
-  height: 100vh;
-}
-/* line 65, ../sass/all.scss */
-.perspectiveView .layer .view2 {
-  width: 100vw;
-  height: 100vh;
-}
-/* line 70, ../sass/all.scss */
-.perspectiveView .layer .view3 {
-  width: 100vw;
-  height: 100vh;
-}
-/* line 75, ../sass/all.scss */
-.perspectiveView .layer .view4 {
-  width: 100vw;
-  height: 100vh;
-}
-/* line 82, ../sass/all.scss */
+/* line 139, ../sass/all.scss */
 .perspectiveView .layer1 {
   -moz-transform: translateZ(875px) scale(0.125);
   -ms-transform: translateZ(875px) scale(0.125);
   -webkit-transform: translateZ(875px) scale(0.125);
   transform: translateZ(875px) scale(0.125);
 }
-/* line 84, ../sass/all.scss */
-.perspectiveView .layer1 .view {
-  left: 0px;
+/* line 142, ../sass/all.scss */
+.perspectiveView .layer1 .view1 {
+  top: 0vh;
 }
-/* line 87, ../sass/all.scss */
+/* line 145, ../sass/all.scss */
 .perspectiveView .layer1 .view2 {
   top: 800vh;
 }
-/* line 90, ../sass/all.scss */
+/* line 148, ../sass/all.scss */
 .perspectiveView .layer1 .view3 {
   top: 1600vh;
 }
-/* line 93, ../sass/all.scss */
+/* line 151, ../sass/all.scss */
 .perspectiveView .layer1 .view4 {
   top: 2400vh;
 }
-/* line 98, ../sass/all.scss */
+/* line 155, ../sass/all.scss */
 .perspectiveView .layer2 {
   -moz-transform: translateZ(750px) scale(0.25);
   -ms-transform: translateZ(750px) scale(0.25);
   -webkit-transform: translateZ(750px) scale(0.25);
   transform: translateZ(750px) scale(0.25);
 }
-/* line 100, ../sass/all.scss */
-.perspectiveView .layer2 .view {
-  left: 0px;
+/* line 158, ../sass/all.scss */
+.perspectiveView .layer2 .view1 {
+  top: 0vh;
 }
-/* line 103, ../sass/all.scss */
+/* line 161, ../sass/all.scss */
 .perspectiveView .layer2 .view2 {
   top: 400vh;
 }
-/* line 106, ../sass/all.scss */
+/* line 164, ../sass/all.scss */
 .perspectiveView .layer2 .view3 {
   top: 800vh;
 }
-/* line 109, ../sass/all.scss */
+/* line 167, ../sass/all.scss */
 .perspectiveView .layer2 .view4 {
   top: 1200vh;
 }
-/* line 114, ../sass/all.scss */
+/* line 171, ../sass/all.scss */
 .perspectiveView .layer3 {
   -moz-transform: translateZ(500px) scale(0.5);
   -ms-transform: translateZ(500px) scale(0.5);
   -webkit-transform: translateZ(500px) scale(0.5);
   transform: translateZ(500px) scale(0.5);
 }
-/* line 116, ../sass/all.scss */
-.perspectiveView .layer3 .view {
-  left: 0px;
+/* line 174, ../sass/all.scss */
+.perspectiveView .layer3 .view1 {
+  top: 0vh;
 }
-/* line 119, ../sass/all.scss */
+/* line 177, ../sass/all.scss */
 .perspectiveView .layer3 .view2 {
   top: 200vh;
 }
-/* line 122, ../sass/all.scss */
+/* line 180, ../sass/all.scss */
 .perspectiveView .layer3 .view3 {
   top: 400vh;
 }
-/* line 125, ../sass/all.scss */
+/* line 183, ../sass/all.scss */
 .perspectiveView .layer3 .view4 {
   top: 600vh;
 }
-/* line 130, ../sass/all.scss */
+/* line 187, ../sass/all.scss */
 .perspectiveView .layer4 {
   -moz-transform: translateZ(0px) scale(1);
   -ms-transform: translateZ(0px) scale(1);
   -webkit-transform: translateZ(0px) scale(1);
   transform: translateZ(0px) scale(1);
 }
-/* line 132, ../sass/all.scss */
-.perspectiveView .layer4 .view {
-  left: 0px;
+/* line 190, ../sass/all.scss */
+.perspectiveView .layer4 .view1 {
+  top: 0vh;
 }
-/* line 135, ../sass/all.scss */
+/* line 193, ../sass/all.scss */
 .perspectiveView .layer4 .view2 {
   top: 100vh;
 }
-/* line 138, ../sass/all.scss */
+/* line 196, ../sass/all.scss */
 .perspectiveView .layer4 .view3 {
   top: 200vh;
 }
-/* line 141, ../sass/all.scss */
+/* line 199, ../sass/all.scss */
 .perspectiveView .layer4 .view4 {
   top: 300vh;
 }
