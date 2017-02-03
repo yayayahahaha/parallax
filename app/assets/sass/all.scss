@@ -23,20 +23,20 @@
 body {
     overflow: hidden;
 }
-img{
+img {
     position: absolute;
     top: calc(20%);
     left: calc(40%);
 }
-
-.btns{
+.btns {
     position: fixed;
     top: 30vh;
     width: 5vh;
     height: 30vh;
     text-align: center;
     z-index: 10;
-    .btn{
+
+    .btn {
         display: inline-block;
         border: 0px solid red;
         margin: 2.25vh 0;
@@ -46,15 +46,15 @@ img{
         border-radius: 50%;
         cursor: pointer;
         @include transition(background-color 0.3s);
-        &:hover{
+
+        &:hover {
             background-color: #444;
         }
-        &:focus{
+        &:focus {
             background-color: #444;
         }
     }
 }
-
 .perspectiveView {
     perspective: 1000px;
     position: relative;
@@ -79,15 +79,16 @@ img{
             height: 100vh;
 
             .content {
-                pointer-events:none;
+                pointer-events: none;
                 text-align: center;
                 display: inline-block;
                 width: 80vw;
+                height: 90vh;
                 line-height: 3rem;
                 font-size: 1.5rem;
                 color: transparent;
-                // color: rgba(0,0,0,0.25);
                 vertical-align: middle;
+                overflow: hidden;
             }
             &:after {
                 content: "";
@@ -111,6 +112,36 @@ img{
         }
         .view4 {
             top: 3 * 800vh;
+            .draw {
+                position: absolute;
+                top: 0vh;
+                left: 0vw;
+                border: 30px solid rgba(0,0,0,0.25);
+                border-radius: 10%;
+                width: 100vw;
+                height: 100vh;
+                @include background(linear-gradient(rgba(255,255,255,0.25), rgba(0,0,0,0.25)));
+                &:before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top:7%;
+                    left: 7%;
+                    width: 86%;
+                    height: 86%;
+                    border: 3px solid white;
+                }
+                &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top:3%;
+                    left: 3%;
+                    width: 94%;
+                    height: 94%;
+                    border: 3px solid black;
+                }
+            }
         }
         .view5 {
             top: 4 * 800vh;
@@ -130,6 +161,36 @@ img{
         }
         .view4 {
             top: 3 * 400vh;
+            .draw {
+                position: absolute;
+                top: 10vh;
+                left: 10vw;
+                border: 30px solid rgba(0,0,0,0.5);
+                border-radius: 10%;
+                width: 80vw;
+                height: 80vh;
+                @include background(linear-gradient(rgba(255,255,255,0.25), rgba(0,0,0,0.25)));
+                &:before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top:7%;
+                    left: 7%;
+                    width: 86%;
+                    height: 86%;
+                    border: 3px solid white;
+                }
+                &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top:3%;
+                    left: 3%;
+                    width: 94%;
+                    height: 94%;
+                    border: 3px solid black;
+                }
+            }
         }
         .view5 {
             top: 4 * 400vh;
@@ -149,6 +210,36 @@ img{
         }
         .view4 {
             top: 3 * 200vh;
+            .draw {
+                position: absolute;
+                top: 20vh;
+                left: 20vw;
+                border: 30px solid rgba(0,0,0,0.75);
+                border-radius: 10%;
+                width: 60vw;
+                height: 60vh;
+                @include background(linear-gradient(rgba(255,255,255,0.25), rgba(0,0,0,0.25)));
+                &:before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top:7%;
+                    left: 7%;
+                    width: 86%;
+                    height: 86%;
+                    border: 3px solid white;
+                }
+                &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top:3%;
+                    left: 3%;
+                    width: 94%;
+                    height: 94%;
+                    border: 3px solid black;
+                }
+            }
         }
         .view5 {
             top: 4 * 200vh;
@@ -168,6 +259,36 @@ img{
         }
         .view4 {
             top: 3 * 100vh;
+            .draw {
+                position: absolute;
+                top: 30vh;
+                left: 30vw;
+                border: 30px solid rgba(0,0,0,1);
+                border-radius: 10%;
+                width: 40vw;
+                height: 40vh;
+                @include background(linear-gradient(rgba(255,255,255,0.25), rgba(0,0,0,0.25)));
+                &:before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top:7%;
+                    left: 7%;
+                    width: 86%;
+                    height: 86%;
+                    border: 3px solid white;
+                }
+                &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top:3%;
+                    left: 3%;
+                    width: 94%;
+                    height: 94%;
+                    border: 3px solid black;
+                }
+            }
         }
         .view5 {
             top: 4 * 100vh;

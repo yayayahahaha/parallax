@@ -35,7 +35,7 @@ img {
   left: calc(40%);
 }
 
-/* line 32, ../sass/all.scss */
+/* line 31, ../sass/all.scss */
 .btns {
   position: fixed;
   top: 30vh;
@@ -59,11 +59,11 @@ img {
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-/* line 49, ../sass/all.scss */
+/* line 50, ../sass/all.scss */
 .btns .btn:hover {
   background-color: #444;
 }
-/* line 52, ../sass/all.scss */
+/* line 53, ../sass/all.scss */
 .btns .btn:focus {
   background-color: #444;
 }
@@ -103,123 +103,273 @@ img {
   text-align: center;
   display: inline-block;
   width: 80vw;
+  height: 90vh;
   line-height: 3rem;
   font-size: 1.5rem;
   color: transparent;
   vertical-align: middle;
+  overflow: hidden;
 }
-/* line 92, ../sass/all.scss */
+/* line 93, ../sass/all.scss */
 .perspectiveView .layer .view:after {
   content: "";
   display: inline-block;
   vertical-align: middle;
   height: 100%;
 }
-/* line 100, ../sass/all.scss */
+/* line 101, ../sass/all.scss */
 .perspectiveView .layer1 {
   -moz-transform: translateZ(875px) scale(0.125);
   -ms-transform: translateZ(875px) scale(0.125);
   -webkit-transform: translateZ(875px) scale(0.125);
   transform: translateZ(875px) scale(0.125);
 }
-/* line 103, ../sass/all.scss */
+/* line 104, ../sass/all.scss */
 .perspectiveView .layer1 .view1 {
   top: 0vh;
 }
-/* line 106, ../sass/all.scss */
+/* line 107, ../sass/all.scss */
 .perspectiveView .layer1 .view2 {
   top: 800vh;
 }
-/* line 109, ../sass/all.scss */
+/* line 110, ../sass/all.scss */
 .perspectiveView .layer1 .view3 {
   top: 1600vh;
 }
-/* line 112, ../sass/all.scss */
+/* line 113, ../sass/all.scss */
 .perspectiveView .layer1 .view4 {
   top: 2400vh;
 }
 /* line 115, ../sass/all.scss */
+.perspectiveView .layer1 .view4 .draw {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  border: 30px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10%;
+  width: 100vw;
+  height: 100vh;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.25)), color-stop(100%, rgba(0, 0, 0, 0.25)));
+  background: -moz-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
+}
+/* line 124, ../sass/all.scss */
+.perspectiveView .layer1 .view4 .draw:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  width: 86%;
+  height: 86%;
+  border: 3px solid white;
+}
+/* line 134, ../sass/all.scss */
+.perspectiveView .layer1 .view4 .draw:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  width: 94%;
+  height: 94%;
+  border: 3px solid black;
+}
+/* line 146, ../sass/all.scss */
 .perspectiveView .layer1 .view5 {
   top: 3200vh;
 }
-/* line 119, ../sass/all.scss */
+/* line 150, ../sass/all.scss */
 .perspectiveView .layer2 {
   -moz-transform: translateZ(750px) scale(0.25);
   -ms-transform: translateZ(750px) scale(0.25);
   -webkit-transform: translateZ(750px) scale(0.25);
   transform: translateZ(750px) scale(0.25);
 }
-/* line 122, ../sass/all.scss */
+/* line 153, ../sass/all.scss */
 .perspectiveView .layer2 .view1 {
   top: 0vh;
 }
-/* line 125, ../sass/all.scss */
+/* line 156, ../sass/all.scss */
 .perspectiveView .layer2 .view2 {
   top: 400vh;
 }
-/* line 128, ../sass/all.scss */
+/* line 159, ../sass/all.scss */
 .perspectiveView .layer2 .view3 {
   top: 800vh;
 }
-/* line 131, ../sass/all.scss */
+/* line 162, ../sass/all.scss */
 .perspectiveView .layer2 .view4 {
   top: 1200vh;
 }
-/* line 134, ../sass/all.scss */
+/* line 164, ../sass/all.scss */
+.perspectiveView .layer2 .view4 .draw {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  border: 30px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10%;
+  width: 80vw;
+  height: 80vh;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.25)), color-stop(100%, rgba(0, 0, 0, 0.25)));
+  background: -moz-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
+}
+/* line 173, ../sass/all.scss */
+.perspectiveView .layer2 .view4 .draw:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  width: 86%;
+  height: 86%;
+  border: 3px solid white;
+}
+/* line 183, ../sass/all.scss */
+.perspectiveView .layer2 .view4 .draw:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  width: 94%;
+  height: 94%;
+  border: 3px solid black;
+}
+/* line 195, ../sass/all.scss */
 .perspectiveView .layer2 .view5 {
   top: 1600vh;
 }
-/* line 138, ../sass/all.scss */
+/* line 199, ../sass/all.scss */
 .perspectiveView .layer3 {
   -moz-transform: translateZ(500px) scale(0.5);
   -ms-transform: translateZ(500px) scale(0.5);
   -webkit-transform: translateZ(500px) scale(0.5);
   transform: translateZ(500px) scale(0.5);
 }
-/* line 141, ../sass/all.scss */
+/* line 202, ../sass/all.scss */
 .perspectiveView .layer3 .view1 {
   top: 0vh;
 }
-/* line 144, ../sass/all.scss */
+/* line 205, ../sass/all.scss */
 .perspectiveView .layer3 .view2 {
   top: 200vh;
 }
-/* line 147, ../sass/all.scss */
+/* line 208, ../sass/all.scss */
 .perspectiveView .layer3 .view3 {
   top: 400vh;
 }
-/* line 150, ../sass/all.scss */
+/* line 211, ../sass/all.scss */
 .perspectiveView .layer3 .view4 {
   top: 600vh;
 }
-/* line 153, ../sass/all.scss */
+/* line 213, ../sass/all.scss */
+.perspectiveView .layer3 .view4 .draw {
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+  border: 30px solid rgba(0, 0, 0, 0.75);
+  border-radius: 10%;
+  width: 60vw;
+  height: 60vh;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.25)), color-stop(100%, rgba(0, 0, 0, 0.25)));
+  background: -moz-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
+}
+/* line 222, ../sass/all.scss */
+.perspectiveView .layer3 .view4 .draw:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  width: 86%;
+  height: 86%;
+  border: 3px solid white;
+}
+/* line 232, ../sass/all.scss */
+.perspectiveView .layer3 .view4 .draw:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  width: 94%;
+  height: 94%;
+  border: 3px solid black;
+}
+/* line 244, ../sass/all.scss */
 .perspectiveView .layer3 .view5 {
   top: 800vh;
 }
-/* line 157, ../sass/all.scss */
+/* line 248, ../sass/all.scss */
 .perspectiveView .layer4 {
   -moz-transform: translateZ(0px) scale(1);
   -ms-transform: translateZ(0px) scale(1);
   -webkit-transform: translateZ(0px) scale(1);
   transform: translateZ(0px) scale(1);
 }
-/* line 160, ../sass/all.scss */
+/* line 251, ../sass/all.scss */
 .perspectiveView .layer4 .view1 {
   top: 0vh;
 }
-/* line 163, ../sass/all.scss */
+/* line 254, ../sass/all.scss */
 .perspectiveView .layer4 .view2 {
   top: 100vh;
 }
-/* line 166, ../sass/all.scss */
+/* line 257, ../sass/all.scss */
 .perspectiveView .layer4 .view3 {
   top: 200vh;
 }
-/* line 169, ../sass/all.scss */
+/* line 260, ../sass/all.scss */
 .perspectiveView .layer4 .view4 {
   top: 300vh;
 }
-/* line 172, ../sass/all.scss */
+/* line 262, ../sass/all.scss */
+.perspectiveView .layer4 .view4 .draw {
+  position: absolute;
+  top: 30vh;
+  left: 30vw;
+  border: 30px solid black;
+  border-radius: 10%;
+  width: 40vw;
+  height: 40vh;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.25)), color-stop(100%, rgba(0, 0, 0, 0.25)));
+  background: -moz-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
+}
+/* line 271, ../sass/all.scss */
+.perspectiveView .layer4 .view4 .draw:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  width: 86%;
+  height: 86%;
+  border: 3px solid white;
+}
+/* line 281, ../sass/all.scss */
+.perspectiveView .layer4 .view4 .draw:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  width: 94%;
+  height: 94%;
+  border: 3px solid black;
+}
+/* line 293, ../sass/all.scss */
 .perspectiveView .layer4 .view5 {
   top: 400vh;
 }
