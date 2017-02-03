@@ -45,20 +45,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         if (i == 1) {
             for (var j = Math.floor(words.length / 4)+1; j < words.length * 2 / 4; j++) {
-                words[numbers[j]].style.color = "rgba(0,0,255,0.5)";
-                // words[numbers[j]].style.color = "rgba(0,0,0,0.5)";
+                words[numbers[j]].style.color = "rgba(0,0,0,0.5)";
             }
         }
         if (i == 2) {
             for (var j = Math.floor(2 * words.length / 4)+1; j < words.length * 3 / 4; j++) {
-                words[numbers[j]].style.color = "rgba(0,255,0,0.5)";
-                // words[numbers[j]].style.color = "rgba(0,0,0,0.5)";
+                words[numbers[j]].style.color = "rgba(0,0,0,0.5)";
             }
         }
         if (i == 3) {
             for (var j = Math.floor(3 * words.length / 4)+1; j < words.length * 4 / 4; j++) {
-                words[numbers[j]].style.color = "rgba(255,0,0,0.5)";
-                // words[numbers[j]].style.color = "rgba(0,0,0,0.5)";
+                words[numbers[j]].style.color = "rgba(0,0,0,0.5)";
             }
         }
     }
@@ -71,7 +68,7 @@ function clickMaker(obj, number, callback) {
         $(".perspectiveView").animate({
                 scrollTop: document.all.forHeight.offsetHeight * number,
             },
-            2000, "linear");
+            1500);
     }
 }
 

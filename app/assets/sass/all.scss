@@ -24,7 +24,9 @@ body {
     overflow: hidden;
 }
 img{
-    width: 10%;
+    position: absolute;
+    top: calc(20%);
+    left: calc(40%);
 }
 
 .btns{
@@ -35,60 +37,19 @@ img{
     text-align: center;
     z-index: 10;
     .btn{
+        display: inline-block;
         border: 0px solid red;
+        margin: 2.25vh 0;
+        width: 3vh;
+        height: 3vh;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        @include transition(background-color 0.3s);
+        &:hover{
+            background-color: #444;
+        }
         &:focus{
-            background-color: #444;
-        }
-    }
-    .btn1{
-        display: inline-block;
-        margin: 2.25vh 0;
-        width: 3vh;
-        height: 3vh;
-        background-color: #ccc;
-        border-radius: 50%;
-        cursor: pointer;
-        @include transition(background-color 0.3s);
-        &:hover{
-            background-color: #444;
-        }
-    }
-    .btn2{
-        display: inline-block;
-        margin: 2.25vh 0;
-        width: 3vh;
-        height: 3vh;
-        background-color: #ccc;
-        border-radius: 50%;
-        cursor: pointer;
-        @include transition(background-color 0.3s);
-        &:hover{
-            background-color: #444;
-        }
-    }
-    .btn3{
-        display: inline-block;
-        margin: 2.25vh 0;
-        width: 3vh;
-        height: 3vh;
-        background-color: #ccc;
-        border-radius: 50%;
-        cursor: pointer;
-        @include transition(background-color 0.3s);
-        &:hover{
-            background-color: #444;
-        }
-    }
-    .btn4{
-        display: inline-block;
-        margin: 2.25vh 0;
-        width: 3vh;
-        height: 3vh;
-        background-color: #ccc;
-        border-radius: 50%;
-        cursor: pointer;
-        @include transition(background-color 0.3s);
-        &:hover{
             background-color: #444;
         }
     }
@@ -151,6 +112,9 @@ img{
         .view4 {
             top: 3 * 800vh;
         }
+        .view5 {
+            top: 4 * 800vh;
+        }
     }
     .layer2 {
         @include transform(translateZ(750px) scale(0.25));
@@ -166,6 +130,9 @@ img{
         }
         .view4 {
             top: 3 * 400vh;
+        }
+        .view5 {
+            top: 4 * 400vh;
         }
     }
     .layer3 {
@@ -183,6 +150,9 @@ img{
         .view4 {
             top: 3 * 200vh;
         }
+        .view5 {
+            top: 4 * 200vh;
+        }
     }
     .layer4 {
         @include transform(translateZ(0px) scale(1));
@@ -198,6 +168,9 @@ img{
         }
         .view4 {
             top: 3 * 100vh;
+        }
+        .view5 {
+            top: 4 * 100vh;
         }
     }
 }
