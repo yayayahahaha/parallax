@@ -1,0 +1,145 @@
+@import "compass/css3";
+
+@font-face {
+    font-family: custom-sans-serif;
+    src: local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
+    unicode-range: U+4E00-9FFF;
+}
+@font-face {
+    font-family: custom-sans-serif;
+    src: local(Helvetica);
+    unicode-range: U+00-024F;
+}
+* {
+    font-family: "custom-sans-serif";
+    margin: 0px;
+    padding: 0px;
+    @include box-sizing(border-box);
+
+    &:focus {
+        outline: none;
+    }
+}
+body {
+    overflow: hidden;
+}
+.perspectiveView {
+    text-align: center;
+    perspective:1000px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .layer{
+        position: relative;
+        width: 100vw;
+        height: 400vh;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        @include transform-origin(50%, 50vh);
+        .view{
+            position: absolute;
+            .content{
+                display: inline-block;
+                width: 80vw;
+                height: 200px;
+                // outline: 1px solid red;
+                vertical-align: middle;
+            }
+            &:after{
+                content: "";
+                display: inline-block;
+                // outline: 1px solid blue;
+                vertical-align: middle;
+                height: 100%;
+            }
+        }
+        .view1{
+            // outline: 1px solid blue;
+            width: 100vw;
+            height: 100vh;
+        }
+        .view2{
+            // outline: 1px solid black;
+            width: 100vw;
+            height: 100vh;
+        }
+        .view3{
+            // outline: 1px solid blue;
+            width: 100vw;
+            height: 100vh;
+        }
+        .view4{
+            // outline: 1px solid black;
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+    
+    .layer1 {
+        @include transform(translateZ(875px) scale(0.125));
+        .view{
+            left: 0px;
+        }
+        .view2{
+            top: 800vh;
+        }
+        .view3{
+            top: 2 * 800vh;
+        }
+        .view4{
+            top: 3 * 800vh;
+        }
+    }
+
+    .layer2 {
+        @include transform(translateZ(750px) scale(0.25));
+        .view{
+            left: 0px;
+        }
+        .view2{
+            top: 400vh;
+        }
+        .view3{
+            top: 2 * 400vh;
+        }
+        .view4{
+            top: 3 * 400vh;
+        }
+    }
+
+    .layer3 {
+        @include transform(translateZ(500px) scale(0.5));
+        .view{
+            left: 0px;
+        }
+        .view2{
+            top: 200vh;
+        }
+        .view3{
+            top: 2 * 200vh;
+        }
+        .view4{
+            top: 3 * 200vh;
+        }
+    }
+
+    .layer4 {
+        @include transform(translateZ(0px) scale(1));
+        .view{
+            left: 0px;
+        }
+        .view2{
+            top: 100vh;
+        }
+        .view3{
+            top: 2 * 100vh;
+        }
+        .view4{
+            top: 3 * 100vh;
+        }
+    }
+}
