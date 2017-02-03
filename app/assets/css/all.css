@@ -153,7 +153,7 @@ img {
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
   background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
 }
-/* line 124, ../sass/all.scss */
+/* line 123, ../sass/all.scss */
 .perspectiveView .layer1 .view4 .draw:before {
   content: '';
   display: block;
@@ -164,7 +164,7 @@ img {
   height: 86%;
   border: 3px solid white;
 }
-/* line 134, ../sass/all.scss */
+/* line 133, ../sass/all.scss */
 .perspectiveView .layer1 .view4 .draw:after {
   content: '';
   display: block;
@@ -175,34 +175,34 @@ img {
   height: 94%;
   border: 3px solid black;
 }
-/* line 146, ../sass/all.scss */
+/* line 145, ../sass/all.scss */
 .perspectiveView .layer1 .view5 {
   top: 3200vh;
 }
-/* line 150, ../sass/all.scss */
+/* line 149, ../sass/all.scss */
 .perspectiveView .layer2 {
   -moz-transform: translateZ(750px) scale(0.25);
   -ms-transform: translateZ(750px) scale(0.25);
   -webkit-transform: translateZ(750px) scale(0.25);
   transform: translateZ(750px) scale(0.25);
 }
-/* line 153, ../sass/all.scss */
+/* line 152, ../sass/all.scss */
 .perspectiveView .layer2 .view1 {
   top: 0vh;
 }
-/* line 156, ../sass/all.scss */
+/* line 155, ../sass/all.scss */
 .perspectiveView .layer2 .view2 {
   top: 400vh;
 }
-/* line 159, ../sass/all.scss */
+/* line 158, ../sass/all.scss */
 .perspectiveView .layer2 .view3 {
   top: 800vh;
 }
-/* line 162, ../sass/all.scss */
+/* line 161, ../sass/all.scss */
 .perspectiveView .layer2 .view4 {
   top: 1200vh;
 }
-/* line 164, ../sass/all.scss */
+/* line 163, ../sass/all.scss */
 .perspectiveView .layer2 .view4 .draw {
   position: absolute;
   top: 10vh;
@@ -216,7 +216,7 @@ img {
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
   background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
 }
-/* line 173, ../sass/all.scss */
+/* line 171, ../sass/all.scss */
 .perspectiveView .layer2 .view4 .draw:before {
   content: '';
   display: block;
@@ -227,7 +227,7 @@ img {
   height: 86%;
   border: 3px solid white;
 }
-/* line 183, ../sass/all.scss */
+/* line 181, ../sass/all.scss */
 .perspectiveView .layer2 .view4 .draw:after {
   content: '';
   display: block;
@@ -238,34 +238,34 @@ img {
   height: 94%;
   border: 3px solid black;
 }
-/* line 195, ../sass/all.scss */
+/* line 193, ../sass/all.scss */
 .perspectiveView .layer2 .view5 {
   top: 1600vh;
 }
-/* line 199, ../sass/all.scss */
+/* line 197, ../sass/all.scss */
 .perspectiveView .layer3 {
   -moz-transform: translateZ(500px) scale(0.5);
   -ms-transform: translateZ(500px) scale(0.5);
   -webkit-transform: translateZ(500px) scale(0.5);
   transform: translateZ(500px) scale(0.5);
 }
-/* line 202, ../sass/all.scss */
+/* line 200, ../sass/all.scss */
 .perspectiveView .layer3 .view1 {
   top: 0vh;
 }
-/* line 205, ../sass/all.scss */
+/* line 203, ../sass/all.scss */
 .perspectiveView .layer3 .view2 {
   top: 200vh;
 }
-/* line 208, ../sass/all.scss */
+/* line 206, ../sass/all.scss */
 .perspectiveView .layer3 .view3 {
   top: 400vh;
 }
-/* line 211, ../sass/all.scss */
+/* line 209, ../sass/all.scss */
 .perspectiveView .layer3 .view4 {
   top: 600vh;
 }
-/* line 213, ../sass/all.scss */
+/* line 211, ../sass/all.scss */
 .perspectiveView .layer3 .view4 .draw {
   position: absolute;
   top: 20vh;
@@ -279,7 +279,7 @@ img {
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
   background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
 }
-/* line 222, ../sass/all.scss */
+/* line 219, ../sass/all.scss */
 .perspectiveView .layer3 .view4 .draw:before {
   content: '';
   display: block;
@@ -290,7 +290,7 @@ img {
   height: 86%;
   border: 3px solid white;
 }
-/* line 232, ../sass/all.scss */
+/* line 229, ../sass/all.scss */
 .perspectiveView .layer3 .view4 .draw:after {
   content: '';
   display: block;
@@ -301,34 +301,34 @@ img {
   height: 94%;
   border: 3px solid black;
 }
-/* line 244, ../sass/all.scss */
+/* line 241, ../sass/all.scss */
 .perspectiveView .layer3 .view5 {
   top: 800vh;
 }
-/* line 248, ../sass/all.scss */
+/* line 245, ../sass/all.scss */
 .perspectiveView .layer4 {
   -moz-transform: translateZ(0px) scale(1);
   -ms-transform: translateZ(0px) scale(1);
   -webkit-transform: translateZ(0px) scale(1);
   transform: translateZ(0px) scale(1);
 }
-/* line 251, ../sass/all.scss */
+/* line 248, ../sass/all.scss */
 .perspectiveView .layer4 .view1 {
   top: 0vh;
 }
-/* line 254, ../sass/all.scss */
+/* line 251, ../sass/all.scss */
 .perspectiveView .layer4 .view2 {
   top: 100vh;
 }
-/* line 257, ../sass/all.scss */
+/* line 254, ../sass/all.scss */
 .perspectiveView .layer4 .view3 {
   top: 200vh;
 }
-/* line 260, ../sass/all.scss */
+/* line 257, ../sass/all.scss */
 .perspectiveView .layer4 .view4 {
   top: 300vh;
 }
-/* line 262, ../sass/all.scss */
+/* line 259, ../sass/all.scss */
 .perspectiveView .layer4 .view4 .draw {
   position: absolute;
   top: 30vh;
@@ -342,7 +342,7 @@ img {
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
   background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
 }
-/* line 271, ../sass/all.scss */
+/* line 267, ../sass/all.scss */
 .perspectiveView .layer4 .view4 .draw:before {
   content: '';
   display: block;
@@ -353,7 +353,7 @@ img {
   height: 86%;
   border: 3px solid white;
 }
-/* line 281, ../sass/all.scss */
+/* line 277, ../sass/all.scss */
 .perspectiveView .layer4 .view4 .draw:after {
   content: '';
   display: block;
@@ -364,7 +364,7 @@ img {
   height: 94%;
   border: 3px solid black;
 }
-/* line 293, ../sass/all.scss */
+/* line 289, ../sass/all.scss */
 .perspectiveView .layer4 .view5 {
   top: 400vh;
 }

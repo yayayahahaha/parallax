@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@font-face{font-family:custom-sans-serif;src:local("Heiti TC"),local("微軟正黑體"),local("Microsoft JhengHei");unicode-range:U+4E00-9FFF}
+@font-face{font-family:custom-sans-serif;src:local(Helvetica);unicode-range:U+00-024F}
+*{font-family:custom-sans-serif;margin:0;padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+:focus{outline:0}
+body{overflow:hidden}
+img{position:absolute;top:calc(20%);left:calc(40%)}
+.btns{position:fixed;top:30vh;width:5vh;height:30vh;text-align:center;z-index:10}
+.btns .btn{display:inline-block;border:0 solid red;margin:2.25vh 0;width:3vh;height:3vh;background-color:#ccc;border-radius:50%;cursor:pointer;-moz-transition:background-color .3s;-o-transition:background-color .3s;-webkit-transition:background-color .3s;transition:background-color .3s}
+.btns .btn:focus,.btns .btn:hover{background-color:#444}
+.perspectiveView{perspective:1000px;position:relative;width:100vw;height:100vh;overflow-y:auto;overflow-x:hidden}
+.perspectiveView .layer{width:100vw;position:absolute;top:0;left:0;-moz-transform-origin:50% 50vh;-ms-transform-origin:50% 50vh;-webkit-transform-origin:50% 50vh;transform-origin:50% 50vh}
+.perspectiveView .layer .view{position:absolute;text-align:center;width:100vw;height:100vh}
+.perspectiveView .layer .view .content{pointer-events:none;text-align:center;display:inline-block;width:80vw;height:90vh;line-height:3rem;font-size:1.5rem;color:transparent;vertical-align:middle;overflow:hidden}
+.perspectiveView .layer .view:after{content:"";display:inline-block;vertical-align:middle;height:100%}
+.perspectiveView .layer1 .view4 .draw:after,.perspectiveView .layer1 .view4 .draw:before,.perspectiveView .layer2 .view4 .draw:after,.perspectiveView .layer2 .view4 .draw:before,.perspectiveView .layer3 .view4 .draw:after,.perspectiveView .layer3 .view4 .draw:before,.perspectiveView .layer4 .view4 .draw:after,.perspectiveView .layer4 .view4 .draw:before{content:'';display:block;position:absolute}
+.perspectiveView .layer1{-moz-transform:translateZ(875px) scale(.125);-ms-transform:translateZ(875px) scale(.125);-webkit-transform:translateZ(875px) scale(.125);transform:translateZ(875px) scale(.125)}
+.perspectiveView .layer1 .view1{top:0}
+.perspectiveView .layer1 .view2{top:800vh}
+.perspectiveView .layer1 .view3{top:1600vh}
+.perspectiveView .layer1 .view4{top:2400vh}
+.perspectiveView .layer1 .view4 .draw{position:absolute;top:0;left:0;border:3px solid rgba(0,0,0,.25);width:100vw;height:100vh;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=);background:-webkit-gradient(linear,50% 0,50% 100%,color-stop(0,rgba(255,255,255,.25)),color-stop(100%,rgba(0,0,0,.25)));background:-moz-linear-gradient(rgba(255,255,255,.25),rgba(0,0,0,.25));background:-webkit-linear-gradient(rgba(255,255,255,.25),rgba(0,0,0,.25));background:linear-gradient(rgba(255,255,255,.25),rgba(0,0,0,.25))}
+.perspectiveView .layer1 .view4 .draw:before{top:7%;left:7%;width:86%;height:86%;border:3px solid #fff}
+.perspectiveView .layer1 .view4 .draw:after{top:3%;left:3%;width:94%;height:94%;border:3px solid #000}
+.perspectiveView .layer1 .view5{top:3200vh}
+.perspectiveView .layer2{-moz-transform:translateZ(750px) scale(.25);-ms-transform:translateZ(750px) scale(.25);-webkit-transform:translateZ(750px) scale(.25);transform:translateZ(750px) scale(.25)}
+.perspectiveView .layer2 .view1{top:0}
+.perspectiveView .layer2 .view2{top:400vh}
+.perspectiveView .layer2 .view3{top:800vh}
+.perspectiveView .layer2 .view4{top:1200vh}
+.perspectiveView .layer2 .view4 .draw{position:absolute;top:10vh;left:10vw;border:3px solid rgba(0,0,0,.5);width:80vw;height:80vh;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=);background:-webkit-gradient(linear,50% 0,50% 100%,color-stop(0,rgba(255,255,255,.25)),color-stop(100%,rgba(0,0,0,.25)));background:-moz-linear-gradient(rgba(255,255,255,.25),rgba(0,0,0,.25));background:-webkit-linear-gradient(rgba(255,255,255,.25),rgba(0,0,0,.25));background:linear-gradient(rgba(255,255,255,.25),rgba(0,0,0,.25))}
+.perspectiveView .layer2 .view4 .draw:before{top:7%;left:7%;width:86%;height:86%;border:3px solid #fff}
+.perspectiveView .layer2 .view4 .draw:after{top:3%;left:3%;width:94%;height:94%;border:3px solid #000}
+.perspectiveView .layer2 .view5{top:1600vh}
+.perspectiveView .layer3{-moz-transform:translateZ(500px) scale(.5);-ms-transform:translateZ(500px) scale(.5);-webkit-transform:translateZ(500px) scale(.5);transform:translateZ(500px) scale(.5)}
+.perspectiveView .layer3 .view1{top:0}
+.perspectiveView .layer3 .view2{top:200vh}
+.perspectiveView .layer3 .view3{top:400vh}
+.perspectiveView .layer3 .view4{top:600vh}
+.perspectiveView .layer3 .view4 .draw{position:absolute;top:20vh;left:20vw;border:3px solid rgba(0,0,0,.75);width:60vw;height:60vh;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=);background:-webkit-gradient(linear,50% 0,50% 100%,color-stop(0,rgba(255,255,255,.25)),color-stop(100%,rgba(0,0,0,.25)));background:-moz-linear-gradient(rgba(255,255,255,.25),rgba(0,0,0,.25));background:-webkit-linear-gradient(rgba(255,255,255,.25),rgba(0,0,0,.25));background:linear-gradient(rgba(255,255,255,.25),rgba(0,0,0,.25))}
+.perspectiveView .layer3 .view4 .draw:before{top:7%;left:7%;width:86%;height:86%;border:3px solid #fff}
+.perspectiveView .layer3 .view4 .draw:after{top:3%;left:3%;width:94%;height:94%;border:3px solid #000}
+.perspectiveView .layer3 .view5{top:800vh}
+.perspectiveView .layer4{-moz-transform:translateZ(0) scale(1);-ms-transform:translateZ(0) scale(1);-webkit-transform:translateZ(0) scale(1);transform:translateZ(0) scale(1)}
+.perspectiveView .layer4 .view1{top:0}
+.perspectiveView .layer4 .view2{top:100vh}
+.perspectiveView .layer4 .view3{top:200vh}
+.perspectiveView .layer4 .view4{top:300vh}
+.perspectiveView .layer4 .view4 .draw{position:absolute;top:30vh;left:30vw;border:3px solid #000;width:40vw;height:40vh;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=);background:-webkit-gradient(linear,50% 0,50% 100%,color-stop(0,rgba(255,255,255,.25)),color-stop(100%,rgba(0,0,0,.25)));background:-moz-linear-gradient(rgba(255,255,255,.25),rgba(0,0,0,.25));background:-webkit-linear-gradient(rgba(255,255,255,.25),rgba(0,0,0,.25));background:linear-gradient(rgba(255,255,255,.25),rgba(0,0,0,.25))}
+.perspectiveView .layer4 .view4 .draw:before{top:7%;left:7%;width:86%;height:86%;border:3px solid #fff}
+.perspectiveView .layer4 .view4 .draw:after{top:3%;left:3%;width:94%;height:94%;border:3px solid #000}
+.perspectiveView .layer4 .view5{top:400vh}

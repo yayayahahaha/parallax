@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
         clickMaker(btns[i], i);
     }
 
-
     /* seperate sentence */
     var sentences = document.querySelectorAll(".content");
     var spans = [];
@@ -18,48 +17,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     /* make four array has many span with word innerHTML */
     for (var i = 0; i < sentences.length; i++) {
+
         spans[i] = [];
         for (var j = 0; j < sentences[i].innerHTML.length; j++) {
             var span = document.createElement("span");
             span.innerHTML = sentences[i].innerHTML[j];
             spans[i].push(span);
         }
-    }
 
-    /* clean up each sentence and append span */
-    for (var i = 0; i < sentences.length; i++) {
+        /* clean up each sentence and append span */
         sentences[i].innerHTML = "";
         for (var j = 0; j < spans[i].length; j++) {
             sentences[i].appendChild(spans[i][j]);
         }
-    }
 
-    /* use shuffle number array decide which span should change color */
-    for (var i = 0; i < sentences.length; i++) {
+        /* use shuffle number array decide which span should change color */
         words = sentences[i].childNodes;
-        if (i == 0) {
-            for (var j = 0; j < words.length / 4; j++) {
-                words[numbers[j]].style.color = "rgba(0,0,0,0.5)";
-            }
-        }
-        if (i == 1) {
-            for (var j = Math.floor(words.length / 4)+1; j < words.length * 2 / 4; j++) {
-                words[numbers[j]].style.color = "rgba(0,0,0,0.5)";
-            }
-        }
-        if (i == 2) {
-            for (var j = Math.floor(2 * words.length / 4)+1; j < words.length * 3 / 4; j++) {
-                words[numbers[j]].style.color = "rgba(0,0,0,0.5)";
-            }
-        }
-        if (i == 3) {
-            for (var j = Math.floor(3 * words.length / 4)+1; j < words.length * 4 / 4; j++) {
-                words[numbers[j]].style.color = "rgba(0,0,0,0.5)";
-            }
+        for (var j = i * Math.floor(words.length / 4); j < (i + 1) * Math.floor(words.length / 4); j++) {
+            words[numbers[j]].style.color = "rgba(0,0,0,0.5)";
         }
     }
-
-
 });
 
 function clickMaker(obj, number, callback) {
