@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     /* seperate sentence */
-
     var sentences = document.querySelectorAll(".content");
     var spans = [];
 
